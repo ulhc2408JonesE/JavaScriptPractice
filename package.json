@@ -1,0 +1,40 @@
+{
+  "name": "basic_js_exercises",
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage --coverage",
+    "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbklopp/Basic_JS_Exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sbklopp/Basic_JS_Exercises/issues"
+  },
+  "homepage": "https://github.com/Sbklopp/Basic_JS_Exercises#readme",
+  "dependencies": {
+    "cypress": "^13.6.3",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "jest-html-reporter": "^3.10.2"
+  }
+}
